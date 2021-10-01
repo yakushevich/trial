@@ -1,0 +1,55 @@
+.peculiarities {
+  @extend %list;
+
+  margin-top: -3rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.peculiarities__item {
+  max-width: 27rem;
+
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+
+  line-height: 1.15;
+  text-align: left;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.peculiarities__icon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  margin-bottom: 3rem;
+
+  background-color: $background-light-color;
+  border-radius: 0.4rem;
+}
+
+.peculiarities__icon {
+  @extend %svg;
+  width: 7rem;
+  height: 7rem;
+}
+
+.peculiarities__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.peculiarities__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $font-main-color;
+}

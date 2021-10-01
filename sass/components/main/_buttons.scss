@@ -1,0 +1,85 @@
+.button {
+  @extend %button;
+  border-radius: 0.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  transition:
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button[type='submit'] {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button--light {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+
+  color: $font-accent-secondary-color;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background: $background-light-color;
+  border-radius: 0.4rem;
+
+  &:hover,
+  &:focus {
+    box-shadow:
+        0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.1),
+        0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08),
+        0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.12);
+    background: $font-accent-color;
+
+    color: $font-light-color;
+  }
+}
+
+.button--icon-padding {
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+
+.button--padding {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+.button--padding5 {
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+}
+
+.button--accent {
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+  background: $font-accent-color;
+
+  color: $font-light-color;
+  font-style: normal;
+  font-weight: bold;
+
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    background: $font-accent-color-dark;
+  }
+}
+
+.icon__button {
+  display: inline-flex;
+  margin-left: 1rem;
+  align-items: center;
+  vertical-align: middle;
+  fill: $font-light-color;
+  width: 2.4rem;
+  height: 2.4rem;
+}

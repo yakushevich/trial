@@ -1,0 +1,63 @@
+.page-section {
+  font-family: $main-font-family;
+  line-height: 1.15;
+  text-align: center;
+  color: $font-accent-secondary-color;
+
+  .container {
+    @extend %container;
+  }
+}
+
+// modification
+.page-section--padding {
+  padding-top: 9.4rem;
+  padding-bottom: 9.4rem;
+}
+
+.page-section--top-padding {
+  padding-top: 9.4rem;
+}
+
+.page-section--dark {
+  background-color: $background-dark-color;
+  color: $font-light-color;
+}
+
+.page-section--light {
+  background-color: $background-light-color;
+}
+
+// elements
+.page-section__hero {
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-our-company.jpg);
+  background-repeat: no-repeat;
+  background-size: 160rem;
+  background-position: center;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.page-section__title {
+  margin-top: 0;
+  margin-bottom: 5rem;
+
+  font-size: 3.6rem;
+  line-height: 1.167;
+
+  letter-spacing: 0.03em;
+}
+
+.page-section__hero-title {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 69.6rem;
+  font-size: 4.4rem;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

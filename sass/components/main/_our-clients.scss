@@ -1,0 +1,74 @@
+.clients {
+  @extend %list;
+
+  margin-top: -3rem;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.clients__item {
+  max-width: 14.529%;
+  min-width: 17rem;
+  height: 9.2rem;
+
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.clients__link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid $foreground-icon-color;
+  border-radius: 0.4rem;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $font-accent-color;
+
+    .icon-clients {
+      fill: $font-accent-color;
+    }
+  }
+}
+
+.icon-clients {
+  display: block;
+  fill: $foreground-icon-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients--ya-company {
+  width: 4.1rem;
+  height: 4.67rem;
+}
+
+.icon-clients--company-group {
+  width: 4rem;
+  height: 5.2rem;
+}
+
+.icon-clients--oval-company-group {
+  height: 4.12rem;
+  width: 4.35rem;
+}
+
+.icon-clients--foster-peters-group {
+  height: 4rem;
+  width: 8.4rem;
+}
+
+.icon-clients--brand-group {
+  height: 4.54rem;
+  width: 6.25rem;
+}
+
+.icon-clients--box-company-group {
+  height: 4.39rem;
+  width: 9.38rem;
+}
