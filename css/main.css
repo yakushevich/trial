@@ -762,6 +762,19 @@ img {
   letter-spacing: 0.03em;
 }
 
+.peculiarities__item:hover, .peculiarities__item:focus {
+  cursor: pointer;
+}
+
+.peculiarities__item:hover .peculiarities__icon-card, .peculiarities__item:focus .peculiarities__icon-card {
+  background-color: #2196f3;
+}
+
+.peculiarities__item:hover .peculiarities__icon, .peculiarities__item:focus .peculiarities__icon {
+  color: red;
+  fill: #c0ecff;
+}
+
 .peculiarities__icon-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,11 +789,15 @@ img {
   margin-bottom: 3rem;
   background-color: #f5f4fa;
   border-radius: 0.4rem;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .peculiarities__icon {
   width: 7rem;
   height: 7rem;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .peculiarities__title {
