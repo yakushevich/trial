@@ -1,0 +1,10 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav__wrapper {
+    @media screen and (max-width: 48rem) {
+        display: none;
+    }
+}

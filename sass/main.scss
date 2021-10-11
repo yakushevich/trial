@@ -1,5 +1,11 @@
 // default
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/common";
+@import "./utils/index";
 
+// base
+@import "./base/index";
+
+// components
+@import "./components/index";
+
+// layout
+@import "./layout/index";

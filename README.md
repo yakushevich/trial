@@ -76,3 +76,4 @@ Last homework goit markup
 //      - background
 // 6. transition
 // 7. animation
+480px, 768px и 1200px.

@@ -4,10 +4,10 @@ html {
 }
 
 body {
+  position: relative;
   font-size: $main-font-size;
   line-height: 1.714;
   color: $font-main-color;
-  position: relative;
 }
 
 img {
