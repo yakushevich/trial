@@ -14,6 +14,12 @@
     color: $font-accent-color;
 }
 
+.webstudio-logo--mr {
+    @media screen and (min-width: 48rem) {
+        margin-right: 8.8rem;
+    }
+}
+
 .webstudio-logo--light {
     color: $font-light-color;
 }
