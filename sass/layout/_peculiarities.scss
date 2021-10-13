@@ -1,0 +1,61 @@
+.page-section__peculiarities {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.peculiarities {
+  @extend %list;
+}
+
+.peculiarities__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 47.9rem) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.peculiarities__icon-card {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 0.4rem;
+  background-color: $background-light-color;
+  color: $font-accent-color;
+}
+
+.peculiarities__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7rem;
+  height: 7rem;
+}
+
+.peculiarities__info {
+  padding-top: 3rem;
+  font-family: $main-font-family;
+}
+
+.peculiarities__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.1428;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $font-accent-secondary-color;
+}
+
+.peculiarities__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $font-main-color;
+}
