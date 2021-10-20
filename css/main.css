@@ -34,7 +34,7 @@ address {
   font-style: inherit;
 }
 
-.nav, .contacts, .mobile-nav__list, .peculiarities {
+.nav, .contacts, .mobile-nav__list, .peculiarities, .our-team, .team-member-socials, .clients {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -106,6 +106,78 @@ address {
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
+  vertical-align: middle;
+}
+
+.team-member-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials-link {
+  display: inline-block;
+  width: 4.4rem;
+  height: 4.4rem;
+  vertical-align: middle;
+}
+
+.socials-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  fill: #afb1b8;
+}
+
+.icon-clients {
+  display: inline-block;
+  width: 10.6rem;
+  height: 6rem;
+  text-align: center;
+  vertical-align: middle;
+  fill: #afb1b8;
+}
+
+.icon-clients--ya-company {
+  display: inline-block;
+  width: 4.4rem;
+  height: 4.9rem;
+  vertical-align: middle;
+}
+
+.icon-clients--company-group {
+  display: inline-block;
+  width: 4rem;
+  height: 5rem;
+  vertical-align: middle;
+}
+
+.icon-clients--oval-company-group {
+  display: inline-block;
+  width: 4.1rem;
+  height: 4.2rem;
+  vertical-align: middle;
+}
+
+.icon-clients--foster-peters-group {
+  display: inline-block;
+  width: 7.9rem;
+  height: 4.2rem;
+  vertical-align: middle;
+}
+
+.icon-clients--brand-group {
+  display: inline-block;
+  width: 5.9rem;
+  height: 4.7rem;
+  vertical-align: middle;
+}
+
+.icon-clients--box-company-group {
+  display: inline-block;
+  width: 8.8rem;
+  height: 4.5rem;
   vertical-align: middle;
 }
 
@@ -449,6 +521,11 @@ address {
   color: inherit;
 }
 
+.page-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .page-section--dark {
   background-color: #2f303a;
   color: #ffffff;
@@ -461,7 +538,7 @@ address {
 .page-section__title {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Roboto;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -507,11 +584,6 @@ address {
     line-height: 1.36;
     /* or 136% */
   }
-}
-
-.page-section__peculiarities {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 @media screen and (max-width: 47.9rem) {
@@ -568,5 +640,54 @@ address {
   .page-section__our-works {
     display: none;
   }
+}
+
+.team-member {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.team-member__name {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-member__position {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
+  margin-bottom: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.clients__item {
+  -ms-flex-preferred-size: calc(50% - 1.5rem*4);
+      flex-basis: calc(50% - 1.5rem*4);
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.clients__link {
+  display: block;
+  padding-top: 1.5rem;
+  padding-left: 5.1rem;
+  padding-right: 5.1rem;
+  padding-bottom: 1.5rem;
+  border: 0.1rem solid #afb1b8;
+  border-radius: 0.4rem;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

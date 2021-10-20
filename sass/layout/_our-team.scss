@@ -1,3 +1,24 @@
-.page-section__our-team {
+.our-team {
+    @extend %list;
+}
 
+.team-member {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.team-member__name {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.team-member__position {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.team-member-socials {
+    @extend %list;
 }

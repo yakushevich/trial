@@ -70,7 +70,7 @@
   <!-- Main start -->
   <main class="main">
     <!-- hero start -->
-    <section class="page-section page-section__hero page-section--dark">
+    <section class="page-section__hero page-section--dark">
       <div class="container container__hero">
         <h1 class="page-section__hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="button button__primary" type="button" data-modal-open>Заказать услугу</button>
@@ -195,9 +195,10 @@
           <li class="our-team__item">
 
             <figure class="team-member">
-              <img class="team-member__img" src="./images/our-team/igor-demyanenko_product-designer_270x260.jpg"
-                alt="Игорь Демьяненко" width="270" height="260" />
-
+              <picture class="team-member__img">
+                <source srcset="./images/our-team/igor-demyanenko_product-designer_450x460.jpg" media="(max-width: 767px)">
+                <img  src="./images/our-team/igor-demyanenko_product-designer_270x260.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              </picture>
               <figcaption class="team-member__info">
 
                 <h3 class="team-member__name">Игорь Демьяненко</h3>
@@ -207,9 +208,9 @@
                 <ul class="team-member-socials">
                   <li class="team-member-socials__item">
 
-                    <a href="#" class="social-link">
+                    <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -217,9 +218,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -227,9 +228,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -237,9 +238,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -266,12 +267,11 @@
                 <p class="team-member__position">Frontend Developer</p>
 
                 <ul class="team-member-socials">
-
                   <li class="team-member-socials__item">
 
-                    <a href="#" class="social-link">
+                    <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -279,9 +279,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -289,9 +289,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -299,9 +299,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -331,37 +331,43 @@
                 <ul class="team-member-socials">
                   <li class="team-member-socials__item">
 
-                    <a href="#" class="social-link">
+                    <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
 
                   </li>
                   <li class="team-member-socials__item">
-                    <a href="" class="social-link">
+
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
+
                   </li>
                   <li class="team-member-socials__item">
-                    <a href="" class="social-link">
+
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
+
                   </li>
                   <li class="team-member-socials__item">
-                    <a href="" class="social-link">
+
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
+
                   </li>
                 </ul>
               </figcaption>
@@ -382,12 +388,11 @@
                 <p class="team-member__position">UI Designer</p>
 
                 <ul class="team-member-socials">
-
                   <li class="team-member-socials__item">
 
-                    <a href="#" class="social-link">
+                    <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -395,9 +400,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -405,9 +410,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -415,9 +420,9 @@
                   </li>
                   <li class="team-member-socials__item">
 
-                    <a href="" class="social-link">
+                    <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="icon icon--light">
+                      <svg class="socials-icon socials-icon--light">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -442,8 +447,8 @@
           <li class="clients__item">
 
             <a href="#" class="clients__link">
-              <svg class="icon-clients icon-clients--ya-company">
-                <use href="./images/icons.svg#icon-clients-ya-and-co-group"></use>
+              <svg class="icon-clients">
+                <use class="icon-clients--ya-company" href="./images/icons.svg#icon-clients-ya-and-co-group"></use>
               </svg>
             </a>
 
@@ -451,8 +456,8 @@
           <li class="clients__item">
 
             <a href="#" class="clients__link">
-              <svg class="icon-clients icon-clients--company-group">
-                <use href="./images/icons.svg#icon-clients-company-group"></use>
+              <svg class="icon-clients">
+                <use class="icon-clients--company-group" href="./images/icons.svg#icon-clients-company-group"></use>
               </svg>
             </a>
 
@@ -460,8 +465,8 @@
           <li class="clients__item">
 
             <a href="#" class="clients__link">
-              <svg class="icon-clients icon-clients--oval-company-group">
-                <use href="./images/icons.svg#icon-clients-oval-company-group"></use>
+              <svg class="icon-clients">
+                <use class="icon-clients--oval-company-group" href="./images/icons.svg#icon-clients-oval-company-group"></use>
               </svg>
             </a>
 
@@ -469,8 +474,8 @@
           <li class="clients__item">
 
             <a href="#" class="clients__link">
-              <svg class="icon-clients icon-clients--foster-peters-group">
-                <use href="./images/icons.svg#icon-clients-foster-peters-group"></use>
+              <svg class="icon-clients">
+                <use class="icon-clients--foster-peters-group" href="./images/icons.svg#icon-clients-foster-peters-group"></use>
               </svg>
             </a>
 
@@ -478,8 +483,8 @@
           <li class="clients__item">
 
             <a href="#" class="clients__link">
-              <svg class="icon-clients icon-clients--brand-group">
-                <use href="./images/icons.svg#icon-clients-brand-group"></use>
+              <svg class="icon-clients">
+                <use class="icon-clients--brand-group" href="./images/icons.svg#icon-clients-brand-group"></use>
               </svg>
             </a>
 
@@ -487,8 +492,8 @@
           <li class="clients__item">
 
             <a href="#" class="clients__link">
-              <svg class="icon-clients icon-clients--box-company-group">
-                <use href="./images/icons.svg#icon-clients-box-company-group"></use>
+              <svg class="icon-clients">
+                <use class="icon-clients--box-company-group" href="./images/icons.svg#icon-clients-box-company-group"></use>
               </svg>
             </a>
 
