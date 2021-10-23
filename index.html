@@ -155,9 +155,13 @@
           <li class="our-works__item">
 
             <a href="#" class="our-works__link">
-
-              <img class="our-works__link-img" src="./images/our-work/working-process_370x294.jpg"
-                alt="Человек печатает на клавиатуре" width="370" />
+              <picture>
+                <source
+                  srcset="./images/our-work/working-process_370x294.jpg 1x, ./images/our-work/working-process_370x294@2x.jpg 2x"
+                  type="image/jpeg" />
+                <img class="our-works__link-img" src="./images/our-work/working-process_370x294.jpg"
+                  alt="Человек печатает на клавиатуре" width="370" />
+              </picture>
 
               <span class="our-works__link-text">Десктопные приложения</span>
             </a>
@@ -166,15 +170,25 @@
 
           <li class="our-works__item">
             <a href="#" class="our-works__link">
-              <img class="our-works__link-img" src="./images/our-work/ui-ux-designing_370x294.jpg"
-                alt="Человек рассматривает мокапы интерфейса" width="370" />
+              <picture>
+                <source
+                  srcset="./images/our-work/ui-ux-designing_370x294.jpg 1x, ./images/our-work/ui-ux-designing_370x294@2x.jpg 2x"
+                  type="image/jpeg" />
+                <img class="our-works__link-img" src="./images/our-work/ui-ux-designing_370x294.jpg"
+                  alt="Человек рассматривает мокапы интерфейса" width="370" />
+              </picture>
               <span class="our-works__link-text">Мобильные приложения</span>
             </a>
           </li>
           <li class="our-works__item">
             <a href="#" class="our-works__link">
-              <img class="our-works__link-img" src="./images/our-work/color-picking_370x294.jpg"
-                alt="На планшете цветовая палитра" width="370" />
+              <picture>
+                <source
+                  srcset="./images/our-work/color-picking_370x294.jpg 1x, ./images/our-work/color-picking_370x294@2x.jpg 2x"
+                  type="image/jpeg" />
+                <img class="our-works__link-img" src="./images/our-work/color-picking_370x294.jpg"
+                  alt="На планшете цветовая палитра" width="370" />
+              </picture>
               <span class="our-works__link-text">Дизайнерские решения</span>
             </a>
           </li>
@@ -195,10 +209,24 @@
           <li class="our-team__item">
 
             <figure class="team-member">
+
               <picture class="team-member__img">
-                <source srcset="./images/our-team/igor-demyanenko_product-designer_450x460@1x.jpg" media="(max-width: 767px)">
-                <img  src="./images/our-team/igor-demyanenko_product-designer_270x260.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                <source
+                  srcset="./images/our-team/igor-demyanenko_product-designer_450x460@1x.jpg 450w,
+                          ./images/our-team/igor-demyanenko_product-designer_450x460@2x.jpg 900w"
+                  sizes = "(max-width: 767px) 450px, 100vw"
+                  media="(max-width: 767px)">
+                <source srcset="./images/our-team/igor-demyanenko_product-designer_354x374@1x.jpg 354w,
+                                ./images/our-team/igor-demyanenko_product-designer_354x374@2x.jpg 700w"
+                        sizes = "(max-width: 1199px) 354px, 50vw"
+                        media="(max-width: 1199px)">
+                <source srcset="./images/our-team/igor-demyanenko_product-designer_354x374@1x.jpg 354w,
+                                ./images/our-team/igor-demyanenko_product-designer_354x374@2x.jpg 700w"
+                  sizes="(max-width: 1199px) 354px, 50vw" media="(max-width: 1199px)">
+                <img src="./images/our-team/igor-demyanenko_product-designer_270x260.jpg" alt="Игорь Демьяненко"
+                  width="270" height="260" />
               </picture>
+
               <figcaption class="team-member__info">
 
                 <h3 class="team-member__name">Игорь Демьяненко</h3>
@@ -466,7 +494,8 @@
 
             <a href="#" class="clients__link">
               <svg class="icon-clients">
-                <use class="icon-clients--oval-company-group" href="./images/icons.svg#icon-clients-oval-company-group"></use>
+                <use class="icon-clients--oval-company-group" href="./images/icons.svg#icon-clients-oval-company-group">
+                </use>
               </svg>
             </a>
 
@@ -475,7 +504,8 @@
 
             <a href="#" class="clients__link">
               <svg class="icon-clients">
-                <use class="icon-clients--foster-peters-group" href="./images/icons.svg#icon-clients-foster-peters-group"></use>
+                <use class="icon-clients--foster-peters-group"
+                  href="./images/icons.svg#icon-clients-foster-peters-group"></use>
               </svg>
             </a>
 
@@ -493,7 +523,8 @@
 
             <a href="#" class="clients__link">
               <svg class="icon-clients">
-                <use class="icon-clients--box-company-group" href="./images/icons.svg#icon-clients-box-company-group"></use>
+                <use class="icon-clients--box-company-group" href="./images/icons.svg#icon-clients-box-company-group">
+                </use>
               </svg>
             </a>
 
