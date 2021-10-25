@@ -73,7 +73,8 @@
     <section class="page-section__hero page-section--dark">
       <div class="container container__hero">
         <h1 class="page-section__hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button button__primary" type="button" data-modal-open>Заказать услугу</button>
+        <button class="button button__primary button__primary--hero" type="button" data-modal-open>Заказать
+          услугу</button>
       </div>
     </section>
     <!-- hero end -->
@@ -211,20 +212,16 @@
             <figure class="team-member">
 
               <picture class="team-member__img">
-                <source
-                  srcset="./images/our-team/igor-demyanenko_product-designer_450x460@1x.jpg 450w,
+                <source srcset="./images/our-team/igor-demyanenko_product-designer_450x460@1x.jpg 450w,
                           ./images/our-team/igor-demyanenko_product-designer_450x460@2x.jpg 900w"
-                  sizes = "(max-width: 767px) 450px, 100vw"
-                  media="(max-width: 767px)">
-                <source srcset="./images/our-team/igor-demyanenko_product-designer_354x374@1x.jpg 354w,
-                                ./images/our-team/igor-demyanenko_product-designer_354x374@2x.jpg 700w"
-                        sizes = "(max-width: 1199px) 354px, 50vw"
-                        media="(max-width: 1199px)">
-                <source srcset="./images/our-team/igor-demyanenko_product-designer_354x374@1x.jpg 354w,
-                                ./images/our-team/igor-demyanenko_product-designer_354x374@2x.jpg 700w"
+                  sizes="(max-width: 767px) 450px, 100vw" media="(max-width: 767px)">
+                <source srcset="./images/our-team/igor-demyanenko_product-designer_354x374@1x.jpg 350w,
+                          ./images/our-team/igor-demyanenko_product-designer_354x374@2x.jpg 700w"
                   sizes="(max-width: 1199px) 354px, 50vw" media="(max-width: 1199px)">
-                <img src="./images/our-team/igor-demyanenko_product-designer_270x260.jpg" alt="Игорь Демьяненко"
-                  width="270" height="260" />
+                <source srcset="./images/our-team/igor-demyanenko_product-designer_270x260@1x.jpg 270w,
+                                ./images/our-team/igor-demyanenko_product-designer_270x260@2x.jpg 540w"
+                  sizes="(min-width: 1200px) 270px, 25vw" media="(min-width: 1200px)">
+                <img src="./images/our-team/igor-demyanenko_product-designer_270x260.jpg" alt="Игорь Демьяненко" />
               </picture>
 
               <figcaption class="team-member__info">
@@ -238,7 +235,7 @@
 
                     <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -248,7 +245,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -258,7 +255,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -268,7 +265,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -285,9 +282,18 @@
 
           <li class="our-team__item">
             <figure class="team-member">
-              <img class="team-member__img" src="./images/our-team/olga-repina_frontend-developer_270x260.jpg"
-                alt="Ольга Репина" width="270" height="260" />
-
+              <picture class="team-member__img">
+                <source srcset="./images/our-team/olga-repina_frontend-developer_450x460@1x.jpg 450w,
+                          ./images/our-team/olga-repina_frontend-developer_450x460@2x.jpg 900w"
+                  sizes="(max-width: 767px) 450px, 100vw" media="(max-width: 767px)">
+                <source srcset="./images/our-team/olga-repina_frontend-developer_354x374@1x.jpg 350w,
+                          ./images/our-team/olga-repina_frontend-developer_354x374@2x.jpg 700w"
+                  sizes="(max-width: 1199px) 354px, 50vw" media="(max-width: 1199px)">
+                <source srcset="./images/our-team/olga-repina_frontend-developer_270x260@1x.jpg 270w,
+                                ./images/our-team/olga-repina_frontend-developer_270x260@2x.jpg 540w"
+                  sizes="(min-width: 1200px) 270px, 25vw" media="(min-width: 1200px)">
+                <img src="./images/our-team/olga-repina_frontend-developer_270x260.jpg" alt="Ольга Репина" />
+              </picture>
               <figcaption class="team-member__info">
 
                 <h3 class="team-member__name">Ольга Репина</h3>
@@ -299,7 +305,7 @@
 
                     <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -309,7 +315,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -319,7 +325,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -329,7 +335,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -347,8 +353,18 @@
 
           <li class="our-team__item">
             <figure class="team-member">
-              <img class="team-member__img" src="./images/our-team/nikolay-tarasov_marketing_270x260.jpg"
-                alt="Николай Тарасов" width="270" height="260" />
+              <picture class="team-member__img">
+                <source srcset="./images/our-team/nikolay-tarasov_marketing_450x460@1x.jpg 450w,
+                          ./images/our-team/nikolay-tarasov_marketing_450x460@2x.jpg 900w"
+                  sizes="(max-width: 767px) 450px, 100vw" media="(max-width: 767px)">
+                <source srcset="./images/our-team/nikolay-tarasov_marketing_354x374@1x.jpg 350w,
+                          ./images/our-team/nikolay-tarasov_marketing_354x374@2x.jpg 700w"
+                  sizes="(max-width: 1199px) 354px, 50vw" media="(max-width: 1199px)">
+                <source srcset="./images/our-team/nikolay-tarasov_marketing_270x260@1x.jpg 270w,
+                                ./images/our-team/nikolay-tarasov_marketing_270x260@2x.jpg 540w"
+                  sizes="(min-width: 1200px) 270px, 25vw" media="(min-width: 1200px)">
+                <img src="./images/our-team/nikolay-tarasov_marketing_270x260.jpg" alt="Николай Тарасов" />
+              </picture>
 
               <figcaption class="team-member__info">
 
@@ -361,7 +377,7 @@
 
                     <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -371,7 +387,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -381,7 +397,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -391,7 +407,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -406,8 +422,18 @@
 
           <li class="our-team__item">
             <figure class="team-member">
-              <img class="team-member__img" src="./images/our-team/mykhail-ermakov_ui-designer_270x260.jpg"
-                alt="Михаил Ермаков" width="270" height="260" />
+              <picture class="team-member__img">
+                <source srcset="./images/our-team/mykhail-ermakov_ui-designer_450x460@1x.jpg 450w,
+                          ./images/our-team/mykhail-ermakov_ui-designer_450x460@2x.jpg 900w"
+                  sizes="(max-width: 767px) 450px, 100vw" media="(max-width: 767px)">
+                <source srcset="./images/our-team/mykhail-ermakov_ui-designer_354x374@1x.jpg 350w,
+                          ./images/our-team/mykhail-ermakov_ui-designer_354x374@2x.jpg 700w"
+                  sizes="(max-width: 1199px) 354px, 50vw" media="(max-width: 1199px)">
+                <source srcset="./images/our-team/mykhail-ermakov_ui-designer_270x260@1x.jpg 270w,
+                                ./images/our-team/mykhail-ermakov_ui-designer_270x260@2x.jpg 540w"
+                  sizes="(min-width: 1200px) 270px, 25vw" media="(min-width: 1200px)">
+                <img src="./images/our-team/mykhail-ermakov_ui-designer_270x260.jpg" alt="Михаил Ермаков" />
+              </picture>
 
               <figcaption class="team-member__info">
 
@@ -420,7 +446,7 @@
 
                     <a href="#" class="socials-link">
                       <span class="visually-hidden">instagram</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-instagram"></use>
                       </svg>
                     </a>
@@ -430,7 +456,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">twitter</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-twitter"></use>
                       </svg>
                     </a>
@@ -440,7 +466,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">facebook</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-facebook"></use>
                       </svg>
                     </a>
@@ -450,7 +476,7 @@
 
                     <a href="" class="socials-link">
                       <span class="visually-hidden">linkedin</span>
-                      <svg class="socials-icon socials-icon--light">
+                      <svg class="socials-icon socials-icon--dark">
                         <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
                       </svg>
                     </a>
@@ -533,12 +559,113 @@
         </ul>
       </div>
     </section>
-
     <!-- our-clients end -->
+
   </main>
   <!-- Main end -->
 
+  <!-- footer start -->
+  <footer class="footer">
 
+    <div class="container container--flex page-section page-section--dark">
+
+      <div class="footer-block footer-block--address footer-block--mr70">
+
+        <a href="./index.html" class="webstudio-logo webstudio-logo--light webstudio-logo--mb"><span
+            class="webstudio-logo__prefix">Web</span>Studio</a>
+        <address class="footer-address">
+          <span class="footer-address__text">г. Киев, пр-т Леси Украинки, 26</span>
+          <ul class="contacts">
+            <li class="contacts__item contacts__item--footer">
+              <a href="mailto:info@devstudio.com"
+                class="contacts__link contacts__link--transparent">info@devstudio.com</a>
+            </li>
+            <li class="contacts__item contacts__item--footer">
+              <a href="tel:+380961111111" class="contacts__link contacts__link--transparent">+38 096 111 11
+                11</a>
+            </li>
+          </ul>
+        </address>
+
+      </div>
+
+      <div class="footer-block footer-block--socials footer-block--mr70">
+        <p class="studio-socials__title">Присоединяйтесь</p>
+
+        <ul class="studio-socials">
+          <li class="studio-socials__item">
+
+            <a href="#" class="social-link social-link--dark">
+              <span class="visually-hidden">instagram</span>
+              <svg class="socials-icon socials-icon--light">
+                <use href="./images/icons.svg#icon-small-icon-instagram"></use>
+              </svg>
+            </a>
+
+          </li>
+          <li class="studio-socials__item">
+
+            <a href="" class="social-link social-link--dark">
+              <span class="visually-hidden">twitter</span>
+              <svg class="socials-icon socials-icon--light">
+                <use href="./images/icons.svg#icon-small-icon-twitter"></use>
+              </svg>
+            </a>
+
+          </li>
+          <li class="studio-socials__item">
+
+            <a href="" class="social-link social-link--dark">
+              <span class="visually-hidden">facebook</span>
+              <svg class="socials-icon socials-icon--light">
+                <use href="./images/icons.svg#icon-small-icon-facebook"></use>
+              </svg>
+            </a>
+
+          </li>
+          <li class="studio-socials__item">
+
+            <a href="" class="social-link social-link--dark">
+              <span class="visually-hidden">linkedin</span>
+              <svg class="socials-icon socials-icon--light">
+                <use href="./images/icons.svg#icon-small-icon-linkedin"></use>
+              </svg>
+            </a>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer-block footer-block--larger">
+
+        <form name="mail-form" class="mail-form">
+
+          <label class="form-input__label--footer" for="user-email">
+            <span class="form-input__label-text form-input__label--text-footer">Подпишитесь на рассылку</span>
+            <input class="form-input__inner form-input__inner--footer" type="email" name="user-email" id="user-email"
+              placeholder="E-mail" />
+          </label>
+
+          <button class="button button__primary button__primary--send" type="submit">
+            <span class="submit-text">Подписаться</span>
+
+            <svg class="icon__button icon--send-mail icon--ml">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- footer end -->
+
+  <!-- Mobile menu start -->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
     <button class="button button__burger-close js-close-menu" type="button" aria-expanded="false"
       aria-controls="mobile-menu">
@@ -586,6 +713,8 @@
       </li>
     </ul>
   </div>
+  <!-- Mobile menu end -->
+
 
   <script src="js/modal.js"></script>
   <script src="js/mobile-menu.js"></script>

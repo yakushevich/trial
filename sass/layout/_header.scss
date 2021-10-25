@@ -110,3 +110,9 @@
         margin-bottom: 1rem;
     }
 }
+
+.contacts__item--footer {
+    &:not(:last-child) {
+        margin-bottom: 0.8rem;
+    }
+}

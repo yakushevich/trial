@@ -1,3 +1,4 @@
+
 .burger-menu__icon {
     display: block;
     width: 4rem;
@@ -11,10 +12,9 @@
 }
 
 .contacts__icon {
-    display: inline-block;
+    @extend %svg;
     width: 1.4rem;
     height: 1.4rem;
-    vertical-align: middle;
 }
 
 .team-member-socials {
@@ -23,68 +23,75 @@
 }
 
 .socials-link {
-    display: inline-block;
+    @extend %svg;
     width: 4.4rem;
     height: 4.4rem;
-    vertical-align: middle;
 }
 
 .socials-icon {
-    display: inline-block;
+    @extend %svg;
     width: 2rem;
     height: 2rem;
-    vertical-align: middle;
+}
+
+.socials-icon--dark {
     fill: $foreground-icon-color;
+}
+
+.socials-icon--light {
+    fill: $font-light-color;
 }
 
 
 .icon-clients {
-    display: inline-block;
+    @extend %svg;
     width: 10.6rem;
     height: 6rem;
-    text-align: center;
-    vertical-align: middle;
     fill: $foreground-icon-color;
 }
 
 .icon-clients--ya-company {
-    display: inline-block;
+    @extend %svg;
     width: 4.4rem;
     height: 4.9rem;
-    vertical-align: middle;
 }
 
 .icon-clients--company-group {
-    display: inline-block;
+    @extend %svg;
     width: 4rem;
     height: 5rem;
-    vertical-align: middle;
 }
 
 .icon-clients--oval-company-group {
-    display: inline-block;
+    @extend %svg;
     width: 4.1rem;
     height: 4.2rem;
-    vertical-align: middle;
 }
 
 .icon-clients--foster-peters-group {
-    display: inline-block;
+    @extend %svg;
     width: 7.9rem;
     height: 4.2rem;
-    vertical-align: middle;
 }
 
 .icon-clients--brand-group {
-    display: inline-block;
+    @extend %svg;
     width: 5.9rem;
     height: 4.7rem;
-    vertical-align: middle;
 }
 
 .icon-clients--box-company-group {
-    display: inline-block;
+    @extend %svg;
     width: 8.8rem;
     height: 4.5rem;
-    vertical-align: middle;
+}
+
+.icon--send-mail {
+    @extend %svg;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.icon--ml {
+    margin-left: 1rem;
 }

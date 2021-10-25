@@ -10,6 +10,7 @@
 
 .clients__item {
     flex-basis: calc(50% - 1.5rem*4);
+    flex-grow: 1;
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;

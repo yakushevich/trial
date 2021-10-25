@@ -1,0 +1,44 @@
+.footer-block {
+    & + & {
+        margin-top: 6rem;
+    }
+}
+
+.footer-block--address {
+    text-align: center;
+}
+
+.footer-address {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $font-light-color;
+}
+
+.footer-address__text {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.studio-socials__title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $main-font-family;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: $font-light-color;
+}
+
+.studio-socials {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
