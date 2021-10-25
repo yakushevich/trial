@@ -42,3 +42,9 @@
     display: flex;
     justify-content: center;
 }
+
+.studio-socials__item {
+    & + & {
+        margin-left: 0.9rem
+    }
+}

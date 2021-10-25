@@ -75,6 +75,24 @@
     }
 }
 
-.button__secondary {
+.socials-link {
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.socials-link--primary {
+
+    &:hover,
+    &:focus {
+        background-color: $font-accent-color;
+
+        .socials-icon {
+            color: $font-light-color;
+            fill: $font-light-color;
+        }
+    }
+}
+
+.socials-link--dark {
+    background: rgba(255, 255, 255, 0.1);
 }

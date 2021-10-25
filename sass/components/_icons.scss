@@ -26,12 +26,21 @@
     @extend %svg;
     width: 4.4rem;
     height: 4.4rem;
+    line-height: 4rem;
 }
+
 
 .socials-icon {
     @extend %svg;
     width: 2rem;
     height: 2rem;
+
+    color: $foreground-icon-color;
+    fill: currentColor;
+
+    transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1),
+                color 250s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .socials-icon--dark {
