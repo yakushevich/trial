@@ -18,6 +18,7 @@
 }
 
 .button__primary {
+    line-height: 1.87;
     color: $font-light-color;
 
     background-color: $font-accent-color;
@@ -61,8 +62,8 @@
 }
 
 .button__primary--send {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-right: 2.8rem;
     padding-left: 2.8rem;
 }

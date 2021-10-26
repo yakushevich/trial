@@ -39,6 +39,13 @@
   letter-spacing: 0.03em;
 }
 
+.form-input--p {
+    @media screen and (min-width: 75rem){
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+}
+
 .form-input--mb1 {
   margin-bottom: 1rem;
 }
@@ -64,6 +71,7 @@
 
 .form-input__label--footer {
   display: block;
+  width: 100%;
   margin-bottom: 2rem;
   cursor: pointer;
 
@@ -73,16 +81,11 @@
       outline: 0.1rem solid $font-accent-color;
     }
   }
-}
 
-.form-input__label--checkbox {
-  display: flex;
-  align-items: center;
-  padding-left: 2.4rem;
-  font-size: 1.2rem;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  cursor: pointer;
+  @media screen and (min-width: 75rem) {
+    margin-bottom: 0;
+    margin-right: 1.2rem;
+  }
 }
 
 .form-input__label {
@@ -92,6 +95,21 @@
 
 .form-input__label-text {
   display: inline-block;
+}
+
+.form-input__label--checkbox {
+  padding-left: 2.4rem;
+  font-size: 1.2rem;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+
+  @media screen and (min-width: 75rem){
+    font-size: 1.4rem;
+    line-height: 1.71;
+    padding-left: 2.3rem;
+  }
 }
 
 .form-input__inner {
@@ -144,6 +162,7 @@
 }
 
 .form-input__inner--footer {
+
   padding: 1.4rem;
   line-height: 1.25;
   font-size: 1.6rem;
@@ -152,6 +171,7 @@
     border-color: $font-accent-color;
   }
 }
+
 
 .form-input__icon {
   position: absolute;
@@ -165,15 +185,13 @@
   text-align: center;
 }
 
-.form-input__label--checkbox {
-  font-size: 1.2rem;
-}
-
 .form-input__icon--checkbox {
   left: 0;
-  bottom: 0;
+  bottom: 50%;
+  transform: translateY(50%);
   width: 1.6rem;
   height: 1.6rem;
+  vertical-align: middle;
 
   border: 0.2rem solid $font-accent-secondary-color;
   border-radius: 0.2rem;
@@ -239,4 +257,9 @@
 
 .label-link {
   color: $font-accent-color;
+  vertical-align: middle;
+}
+
+.form-input__label--checkbox-text {
+  vertical-align: middle;
 }

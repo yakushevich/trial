@@ -8,7 +8,7 @@
 }
 
 .nav__wrapper {
-    @media screen and (max-width: 47.9rem) {
+    @media screen and (max-width: 47.9375rem) {
         display: none;
     }
 
@@ -106,9 +106,30 @@
     }
 }
 
-.contacts__item {
-    &:not(:last-child) {
-        margin-bottom: 1rem;
+
+.contacts--header {
+    @media screen and (min-width: 75rem) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.contacts__item--header {
+    margin-bottom: 0;
+
+    @media  screen and (max-width: 74.9rem) {
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media  screen and (min-width: 75rem) {
+        font-size: 1.4rem;
+        line-height: 1.1428;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
     }
 }
 

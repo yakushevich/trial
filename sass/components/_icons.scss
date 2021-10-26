@@ -18,6 +18,11 @@
     @extend %svg;
     width: 1.4rem;
     height: 1.4rem;
+
+    @media screen and (min-width: 75rem) {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
 }
 
 .team-member-socials {

@@ -28,9 +28,11 @@
 .project-cards {
   @extend %list;
 
+
   @media screen and (min-width: 48rem) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     margin-top: -1.5rem;
     margin-bottom: -1.5rem;
     margin-left: -1.5rem;
@@ -50,22 +52,38 @@
       0.1rem 0.4rem 0.6rem rgba(0, 0, 0, 0.16);
   }
 
-  @media screen and (max-width: 47.9rem) {
+  @media screen and (max-width: 47.9375rem) {
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
 
-    max-width: 45rem;
+    width: 45rem;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: 48rem) {
-    max-width: 35.4rem;
+    flex-basis: calc((100% - 4*1.5rem)/2);
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (min-width: 75rem) {
+    flex-basis: calc((100% - 6*1.5rem)/3);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    &:last-child {
+      margin-right: auto;
+    }
   }
 }
 
