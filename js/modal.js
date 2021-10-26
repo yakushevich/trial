@@ -1,5 +1,5 @@
 'use strict';
-console.log('all works');
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -10,7 +10,15 @@ console.log('all works');
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
+  /**
+   * Toggle.
+   */
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+
+    const isFormOpen = [...refs.modal.classList].includes('is-hidden');
+    const method = !isFormOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+
+    bodyScrollLock[method](document.body);
   }
 })();

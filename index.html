@@ -67,6 +67,7 @@
     </div>
   </header>
   <!-- Header end -->
+
   <!-- Main start -->
   <main class="main">
     <!-- hero start -->
@@ -564,6 +565,104 @@
   </main>
   <!-- Main end -->
 
+  <!-- Form on backdrop -->
+  <div class="backdrop-container is-hidden" data-modal>
+    <div class="overlay">
+
+      <button class="overlay__button" type="button" data-modal-close>
+        <svg class="icon icon__close">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        <span class="visually-hidden">Close</span>
+      </button>
+
+      <div class="form-card">
+
+        <p class="form-card__title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form class="form">
+
+          <!-- name input -->
+          <div class="form-input form-input--mb1">
+            <label class="form-input__label" for="user-name">
+
+              <span class="form-input__label--text">Имя</span>
+              <input class="form-input__inner" type="text" name="user-name" id="user-name" autocomplete="name" />
+
+              <span class="form-input__icon">
+                <svg class="icon icon--user">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </span>
+
+            </label>
+          </div>
+
+          <!-- tel input -->
+          <div class="form-input form-input--mb1">
+            <label class="form-input__label" for="user-tel">
+
+              <span class="form-input__label--text">Телефон</span>
+              <input class="form-input__inner" type="tel" name="user-tel" id="user-tel" autocomplete="tel" />
+              <span class="form-input__icon">
+                <svg class="icon icon--phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+
+          </div>
+
+          <!-- email input -->
+          <div class="form-input form-input--mb1">
+            <label class="form-input__label" for="user-email">
+
+              <span class="form-input__label--text">Почта</span>
+              <input class="form-input__inner" type="email" name="user-email" id="user-email" autocomplete="email" />
+              <span class="form-input__icon">
+                <svg class="icon icon--envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+              </span>
+
+            </label>
+          </div>
+
+          <!-- comment input -->
+          <div class="form-input form-input--mb2">
+            <label class="form-input__label" for="user-comment">
+              <span class="form-input__label--text">Комментарий</span>
+              <textarea class="form-input__textarea" name="user-comment" id="user-comment" rows="7"
+                placeholder="Введите текст"></textarea>
+            </label>
+          </div>
+
+          <!-- checkbox input -->
+          <div class="form-input form-input--mb3">
+            <label class="form-input__label form-input__label--checkbox" for="user-aggrement">
+              <input class="checkbox checkbox-hidden" type="checkbox" name="user-aggregant" id="user-aggrement" />
+
+              <span class="form-input__icon form-input__icon--checkbox">
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </span>
+
+              <span class="form-input__label--checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
+              <a href="#" class="label-link">Условия договора</a>
+
+            </label>
+          </div>
+
+          <button type="submit" class="button button--accent button--padding5">Отправить</button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- Form on backdrop End -->
+
   <!-- footer start -->
   <footer class="footer">
 
@@ -642,7 +741,8 @@
         <form name="mail-form" class="mail-form">
 
           <label class="form-input__label--footer" for="user-email">
-            <span class="form-input__label-text form-input__label--text-footer">Подпишитесь на рассылку</span>
+            <span class="studio-socials__title form-input__label-text form-input__label--text-footer">Подпишитесь на
+              рассылку</span>
             <input class="form-input__inner form-input__inner--footer" type="email" name="user-email" id="user-email"
               placeholder="E-mail" />
           </label>
@@ -716,6 +816,9 @@
   <!-- Mobile menu end -->
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/4.0.0-beta.0/bodyScrollLock.min.js"
+    integrity="sha512-3Nm4Kyd9rUTWfh21EUrquXSPtan5lhhOFqnV7xdE9gW7+M8Y6FEyTf7NJQMwtMiCyulb6Wu6j6boo6Q79N/CPA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/modal.js"></script>
   <script src="js/mobile-menu.js"></script>
 </body>

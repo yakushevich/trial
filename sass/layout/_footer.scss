@@ -1,14 +1,4 @@
-.footer-block {
-    & + & {
-        margin-top: 6rem;
-    }
-}
-
-.footer-block--address {
-    text-align: center;
-}
-
-.footer-address {
+.footer {
     font-family: $main-font-family;
     font-style: normal;
     font-weight: normal;
@@ -17,6 +7,20 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $font-light-color;
+}
+
+.footer-block {
+    & + & {
+        margin-top: 6rem;
+    }
+}
+
+.footer-block--address {
+
+}
+
+.footer-address {
+
 }
 
 .footer-address__text {
@@ -47,4 +51,55 @@
     & + & {
         margin-left: 0.9rem
     }
+}
+
+.mail-form {
+    text-align: center;
+}
+
+.form-input__label--footer {
+    display: block;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    &:focus-within {
+        .form-input__inner {
+            border-color: $font-accent-color;
+            outline: 0.1rem solid $font-accent-color;
+        }
+    }
+}
+
+.form-input__label-text {
+    display: block;
+
+}
+
+
+.form-input__inner {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+
+
+    font-size: 1.6rem;
+    line-height: 1.25;
+    background: transparent;
+    color: $font-light-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 0.4rem;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:not(:placeholder-shown) {
+        border-color: $font-accent-color;
+    }
+
 }
