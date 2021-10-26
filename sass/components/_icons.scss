@@ -1,3 +1,6 @@
+.icon {
+    @extend %svg;
+}
 
 .burger-menu__icon {
     display: block;
@@ -104,4 +107,25 @@
 
 .icon--ml {
     margin-left: 1rem;
+}
+
+
+.icon--user {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.icon--phone {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.icon--envelope {
+  width: 1.614rem;
+  height: 1.614rem;
+}
+
+.icon-checkbox {
+  width: 1.6rem;
+  height: 1.6rem;
 }

@@ -34,13 +34,13 @@ address {
   font-style: inherit;
 }
 
-.contacts__icon, .socials-link, .socials-icon, .icon-clients, .icon-clients--ya-company, .icon-clients--company-group, .icon-clients--oval-company-group, .icon-clients--foster-peters-group, .icon-clients--brand-group, .icon-clients--box-company-group, .icon--send-mail {
+.icon, .contacts__icon, .socials-link, .socials-icon, .icon-clients, .icon-clients--ya-company, .icon-clients--company-group, .icon-clients--oval-company-group, .icon-clients--foster-peters-group, .icon-clients--brand-group, .icon-clients--box-company-group, .icon--send-mail {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
 }
 
-.nav, .contacts, .mobile-nav__list, .peculiarities, .our-team, .team-member-socials, .clients, .studio-socials {
+.nav, .contacts, .mobile-nav__list, .peculiarities, .our-team, .team-member-socials, .clients, .portfolio-nav, .project-cards, .studio-socials {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -203,6 +203,26 @@ address {
   margin-left: 1rem;
 }
 
+.icon--user {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.icon--phone {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.icon--envelope {
+  width: 1.614rem;
+  height: 1.614rem;
+}
+
+.icon-checkbox {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -232,6 +252,26 @@ address {
   background: #188ce8;
   -webkit-box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+.button__secondary {
+  color: #212121;
+  background-color: #f5f4fa;
+  border-radius: 0.4rem;
+}
+
+.button__secondary:hover, .button__secondary:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.1), 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08), 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.1), 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08), 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.12);
+}
+
+.button__secondary--portfolio {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
 }
 
 .button__primary--hero {
@@ -312,6 +352,41 @@ address {
   padding-right: 5.5rem;
   line-height: 1.875;
   letter-spacing: 0.06em;
+}
+
+.overlay__button {
+  position: absolute;
+  padding: 0;
+  right: 0.8rem;
+  top: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__button .icon__close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__button:hover, .overlay__button:focus {
+  background: #f1fdff;
+  border: 1px solid #2196f3;
+}
+
+.overlay__button:hover .icon__close, .overlay__button:focus .icon__close {
+  fill: #2196f3;
 }
 
 .header {
@@ -873,41 +948,6 @@ address {
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay__button {
-  position: absolute;
-  padding: 0;
-  right: 0.8rem;
-  top: 0.8rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.overlay__button .icon__close {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 1.1rem;
-  height: 1.1rem;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.overlay__button:hover, .overlay__button:focus {
-  background: #f1fdff;
-  border: 1px solid #2196f3;
-}
-
-.overlay__button:hover .icon__close, .overlay__button:focus .icon__close {
-  fill: #2196f3;
-}
-
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -917,6 +957,117 @@ address {
 .is-hidden .overlay {
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
+}
+
+.portfolio {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-nav {
+  margin-top: -0.75rem;
+  margin-right: -0.4rem;
+  margin-bottom: calc(4rem - 0.75rem);
+  margin-left: -0.4rem;
+}
+
+.portfolio-nav__list-item {
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.4rem;
+}
+
+.project-cards {
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.project-cards__item {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.card {
+  text-align: left;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.12), 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.06), 0.1rem 0.4rem 0.6rem rgba(0, 0, 0, 0.16);
+          box-shadow: 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.12), 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.06), 0.1rem 0.4rem 0.6rem rgba(0, 0, 0, 0.16);
+}
+
+.card__img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__overflow {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 6.3rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card__overflow {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.card__info-wrapper {
+  line-height: 1.15;
+  color: #212121;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  border-bottom: 0.1rem solid #eeeeee;
+  border-left: 0.1rem solid #eeeeee;
+  border-right: 0.1rem solid #eeeeee;
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-category {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .form-input__inner, .form-input__textarea {
@@ -1153,31 +1304,6 @@ address {
 .form-input__textarea:focus-within {
   border-color: #2196f3;
   outline: 0.1rem solid #2196f3;
-}
-
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.icon--user {
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
-.icon--phone {
-  width: 1.3rem;
-  height: 1.3rem;
-}
-
-.icon--envelope {
-  width: 1.614rem;
-  height: 1.614rem;
-}
-
-.icon-checkbox {
-  width: 1.6rem;
-  height: 1.6rem;
 }
 
 .checkbox-hidden {
