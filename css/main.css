@@ -801,16 +801,16 @@ address {
   max-width: 76.8rem;
   text-align: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/hero-our-company_480x400@1x.jpg");
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-our-company_480x400@1x.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../../images/hero/hero-our-company_480x400@1x.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/hero/hero-our-company_480x400@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .page-section__hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/hero-our-company_480x400@2x.jpg");
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-our-company_480x400@2x.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../../images/hero/hero-our-company_480x400@2x.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/hero/hero-our-company_480x400@2x.jpg");
   }
 }
 
@@ -818,15 +818,15 @@ address {
   .page-section__hero {
     min-width: 76.8rem;
     max-width: 120rem;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/hero-our-company_768x400@1x.jpg");
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-our-company_768x400@1x.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../../images/hero/hero-our-company_768x400@1x.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/hero/hero-our-company_768x400@1x.jpg");
   }
 }
 
 @media screen and (min-width: 48rem) and (min-device-pixel-ratio: 2), screen and (min-width: 48rem) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 48rem) and (min-resolution: 192dpi), screen and (min-width: 48rem) and (min-resolution: 2dppx) {
   .page-section__hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/hero-our-company_768x400@2x.jpg");
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-our-company_768x400@2x.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../../images/hero/hero-our-company_768x400@2x.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/hero/hero-our-company_768x400@2x.jpg");
   }
 }
 
@@ -836,15 +836,15 @@ address {
     max-width: 160rem;
     padding-top: 20rem;
     padding-bottom: 20rem;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/hero-our-company_1600x600@1x.jpg");
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-our-company_1600x600@1x.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../../images/hero/hero-our-company_1600x600@1x.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/hero/hero-our-company_1600x600@1x.jpg");
   }
 }
 
 @media screen and (min-width: 75rem) and (min-device-pixel-ratio: 2), screen and (min-width: 75rem) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 75rem) and (min-resolution: 192dpi), screen and (min-width: 75rem) and (min-resolution: 2dppx) {
   .page-section__hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/hero-our-company_1600x600@1x.jpg");
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-our-company_1600x600@1x.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../../images/hero/hero-our-company_1600x600@1x.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/hero/hero-our-company_1600x600@1x.jpg");
   }
 }
 
