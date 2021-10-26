@@ -1,0 +1,180 @@
+.button {
+    display: inline-flex;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 1.625;
+
+    font-size: 1.6rem;
+    font-family: $main-font-family;
+    font-weight: bold;
+    background-color: transparent;
+    fill: currentColor;
+
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__primary {
+    line-height: 1.87;
+    color: $font-light-color;
+
+    background-color: $font-accent-color;
+    border-radius: 0.4rem;
+
+    &:hover,
+    &:focus {
+        background: $font-accent-color-dark;
+        box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+    }
+}
+
+.button__secondary {
+    color: $font-accent-secondary-color;
+
+    background-color: $background-light-color;
+    border-radius: 0.4rem;
+
+    &:hover,
+    &:focus {
+        color: $font-light-color;
+        background-color: $font-accent-color;
+        box-shadow: 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.1),
+                    0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08),
+                    0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.12);
+    }
+}
+
+.button__secondary--portfolio {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+.button__primary--hero {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+}
+
+.button__primary--send {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2.8rem;
+    padding-left: 2.8rem;
+}
+
+.button__burger-menu {
+    margin-left: auto;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        fill: $font-accent-color;
+    }
+
+    @media screen and (min-width: 48rem){
+        display: none;
+    }
+}
+
+.button__burger-close {
+    padding: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        fill: $font-accent-color;
+    }
+}
+
+.socials-link {
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-link--primary {
+
+    &:hover,
+    &:focus {
+        background-color: $font-accent-color;
+
+        .socials-icon {
+            color: $font-light-color;
+            fill: $font-light-color;
+        }
+    }
+}
+
+.socials-link--dark {
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        background-color: $font-accent-color;
+
+        .socials-icon {
+            color: $font-light-color;
+            fill: $font-light-color;
+        }
+    }
+}
+
+.button--padding5 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+}
+
+.overlay__button {
+    @extend %button;
+    position: absolute;
+    padding: 0;
+    right: 0.8rem;
+    top: 0.8rem;
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .icon__close {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 1.1rem;
+        height: 1.1rem;
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+        background: #f1fdff;
+        border: 1px solid $font-accent-color;
+
+        .icon__close {
+            fill: $font-accent-color;
+        }
+    }
+}

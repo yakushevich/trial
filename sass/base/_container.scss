@@ -1,0 +1,31 @@
+.container {
+    @extend %container;
+
+    @media screen and (min-width: 48rem) {
+      min-width: 76.8rem;
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 75rem) {
+      max-width: 120rem;
+    }
+}
+
+.container__fixed {
+  @extend %container;
+
+  @media screen and (min-width: 48rem) {
+    max-width: 76.8rem;
+  }
+
+  @media screen and (min-width: 75rem) {
+    max-width: 120rem;
+  }
+}
+
+.container--flex {
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

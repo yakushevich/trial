@@ -1,0 +1,44 @@
+.page-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @media screen and (min-width: 75rem){
+    padding-top: 9.4rem;
+    padding-bottom: 9.4rem;
+  }
+}
+
+.page-section__our-works {
+  padding-bottom: 9.4rem;
+}
+
+.page-section--dark {
+  background-color: $background-dark-color;
+  color: $font-light-color;
+}
+
+.page-section--darker {
+  background-color: $background-light-color;
+}
+
+.page-section__title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 1.17857;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+
+    @media screen and (min-width: 75rem){
+      font-size: 3.6rem;
+      line-height: 1.1666;
+    }
+}

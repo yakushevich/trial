@@ -1,0 +1,38 @@
+.webstudio-logo {
+    display: block;
+    line-height: 1.166;
+
+    font-family: $accent-font-family;
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+}
+
+.webstudio-logo__prefix {
+    color: $font-accent-color;
+}
+
+.webstudio-logo--mr {
+    @media screen and (min-width: 48rem) {
+        margin-right: 8.8rem;
+    }
+}
+
+.webstudio-logo--light {
+    color: $font-light-color;
+}
+
+.webstudio-logo--dark {
+    color: $font-accent-secondary-color;
+}
+
+.webstudio-logo__head {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.webstudio-logo--mb {
+    margin-bottom: 2rem;
+}

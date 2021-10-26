@@ -1,0 +1,136 @@
+.icon {
+    @extend %svg;
+}
+
+.burger-menu__icon {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
+.burger-close__icon {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.contacts__icon {
+    @extend %svg;
+    width: 1.4rem;
+    height: 1.4rem;
+
+    @media screen and (min-width: 75rem) {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.team-member-socials {
+    display: flex;
+
+}
+
+.socials-link {
+    @extend %svg;
+    font-size: 1.4rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+}
+
+
+.socials-icon {
+    @extend %svg;
+    width: 2rem;
+    height: 2rem;
+
+    color: $foreground-icon-color;
+    fill: currentColor;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.socials-icon--dark {
+    fill: $foreground-icon-color;
+}
+
+.socials-icon--light {
+    fill: $font-light-color;
+}
+
+
+.icon-clients {
+    @extend %svg;
+    width: 10.6rem;
+    height: 6rem;
+    fill: $foreground-icon-color;
+}
+
+.icon-clients--ya-company {
+    @extend %svg;
+    width: 4.4rem;
+    height: 4.9rem;
+}
+
+.icon-clients--company-group {
+    @extend %svg;
+    width: 4rem;
+    height: 5rem;
+}
+
+.icon-clients--oval-company-group {
+    @extend %svg;
+    width: 4.1rem;
+    height: 4.2rem;
+}
+
+.icon-clients--foster-peters-group {
+    @extend %svg;
+    width: 7.9rem;
+    height: 4.2rem;
+}
+
+.icon-clients--brand-group {
+    @extend %svg;
+    width: 5.9rem;
+    height: 4.7rem;
+}
+
+.icon-clients--box-company-group {
+    @extend %svg;
+    width: 8.8rem;
+    height: 4.5rem;
+}
+
+.icon--send-mail {
+    @extend %svg;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.icon--ml {
+    margin-left: 1rem;
+}
+
+
+.icon--user {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.icon--phone {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.icon--envelope {
+  width: 1.614rem;
+  height: 1.614rem;
+}
+
+.icon-checkbox {
+  width: 1.6rem;
+  height: 1.6rem;
+}
