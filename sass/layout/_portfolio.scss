@@ -1,43 +1,47 @@
 .portfolio {
-    font-family: $main-font-family;
-    letter-spacing: 0.03em;
+  font-family: $main-font-family;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-nav {
-    @extend %list;
-}
-.portfolio-nav {
-    margin-top: -0.75rem;
-    margin-right: -0.4rem;
-    margin-bottom: calc(4rem - 0.75rem);
-    margin-left: -0.4rem;
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -0.75rem;
+  margin-right: -0.4rem;
+  margin-bottom: calc(4rem - 0.75rem);
+  margin-left: -0.4rem;
+
+  @media screen and (min-width: 48rem) {
+    justify-content: center;
+  }
 }
 
 .portfolio-nav__list-item {
-    display: inline-block;
-    margin-top: 0.75rem;
-    margin-right: 0.4rem;
-    margin-bottom: 0.75rem;
-    margin-left: 0.4rem;
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.4rem;
 }
 
 .project-cards {
-    @extend %list;
+  @extend %list;
+
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: -1.5rem;
     margin-bottom: -1.5rem;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+  }
 }
 
 .project-cards__item {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.card {
-  text-align: left;
+  border-bottom: 0.1rem solid #eeeeee;
+  border-left: 0.1rem solid #eeeeee;
+  border-right: 0.1rem solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -45,13 +49,34 @@
     box-shadow: 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.12), 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.06),
       0.1rem 0.4rem 0.6rem rgba(0, 0, 0, 0.16);
   }
+
+  @media screen and (max-width: 47.9rem) {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 48rem) {
+    max-width: 35.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.card {
+  text-align: left;
 }
 
 .card__img-wrapper {
   position: relative;
   overflow: hidden;
 }
-
 
 .card__overflow {
   position: absolute;
@@ -82,7 +107,6 @@
   }
 }
 
-
 .card__info-wrapper {
   line-height: 1.15;
 
@@ -92,10 +116,6 @@
   padding-bottom: 2rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
-
-  border-bottom: 0.1rem solid #eeeeee;
-  border-left: 0.1rem solid #eeeeee;
-  border-right: 0.1rem solid #eeeeee;
 }
 
 .project-name {

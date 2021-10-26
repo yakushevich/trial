@@ -6,13 +6,35 @@
     max-width: 76.8rem;
     text-align: center;
 
-    background-size: 48rem 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../../images/hero/hero-our-company_480x400@1x.jpg');
 
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media  screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url('../../images/hero/hero-our-company_480x400@2x.jpg');
+    }
+
+    @media screen and (min-width: 48rem)  {
+        min-width: 76.8rem;
+        max-width: 160rem;
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/hero/hero-our-company_768x400@1x.jpg');
+
+        @media  screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                    url('../../images/hero/hero-our-company_768x400@2x.jpg');
+            }
+    }
 
 }
 
@@ -33,6 +55,5 @@
         max-width: 69.6rem;
         font-size: 4.4rem;
         line-height: 1.36;
-        /* or 136% */
     }
 }
