@@ -844,8 +844,8 @@ address {
 
 @media screen and (min-width: 75rem) and (min-device-pixel-ratio: 2), screen and (min-width: 75rem) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 75rem) and (min-resolution: 192dpi), screen and (min-width: 75rem) and (min-resolution: 2dppx) {
   .page-section__hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-our-company_1600x600@1x.jpg);
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-our-company_1600x600@1x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-our-company_1600x600@2x.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-our-company_1600x600@2x.jpg);
   }
 }
 
