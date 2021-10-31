@@ -12,6 +12,9 @@
     left: 0;
     min-width: 100vw;
     height: 100vh;
+    font-family: $main-font-family;
+    letter-spacing: 0.02em;
+
     background: $white-color;
     color: $font-accent-secondary-color;
     transform: translate(100%, 0);

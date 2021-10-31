@@ -18,6 +18,7 @@
     @extend %svg;
     width: 1.4rem;
     height: 1.4rem;
+    fill: currentColor;
 
     @media screen and (min-width: 75rem) {
         width: 1.6rem;

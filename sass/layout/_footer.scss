@@ -37,7 +37,7 @@
 
   @media screen and (min-width: 75rem) {
     flex-basis: 25%;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
     text-align: left;
   }
 }
@@ -75,7 +75,7 @@
   display: flex;
   justify-content: center;
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 75rem) {
     justify-content: flex-start;
   }
 }

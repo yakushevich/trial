@@ -41,7 +41,6 @@ address {
 }
 
 .container, .container__fixed {
-  min-width: 32rem;
   max-width: 100%;
   margin: 0 auto;
   padding-left: 1.5rem;
@@ -72,28 +71,39 @@ address {
   background: transparent;
 }
 
+@media screen and (min-width: 30rem) {
+  .container {
+    width: 48rem;
+  }
+}
+
 @media screen and (min-width: 48rem) {
   .container {
-    min-width: 76.8rem;
-    max-width: 100%;
+    width: 76.8rem;
   }
 }
 
 @media screen and (min-width: 75rem) {
   .container {
-    max-width: 120rem;
+    width: 120rem;
+  }
+}
+
+@media screen and (min-width: 30rem) {
+  .container__fixed {
+    width: 48rem;
   }
 }
 
 @media screen and (min-width: 48rem) {
   .container__fixed {
-    max-width: 76.8rem;
+    width: 76.8rem;
   }
 }
 
 @media screen and (min-width: 75rem) {
   .container__fixed {
-    max-width: 120rem;
+    width: 120rem;
   }
 }
 
@@ -160,6 +170,7 @@ address {
 .contacts__icon {
   width: 1.4rem;
   height: 1.4rem;
+  fill: currentColor;
 }
 
 @media screen and (min-width: 75rem) {
@@ -613,6 +624,8 @@ address {
   left: 0;
   min-width: 100vw;
   height: 100vh;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.02em;
   background: #ffffff;
   color: #212121;
   -webkit-transform: translate(100%, 0);
@@ -788,6 +801,7 @@ address {
 
 @media screen and (min-width: 75rem) {
   .page-section__title {
+    margin-bottom: 5rem;
     font-size: 3.6rem;
     line-height: 1.1666;
   }
@@ -1275,6 +1289,13 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: calc(3rem - 0.75rem);
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .portfolio-nav {
+    margin-bottom: calc(5rem - 0.75rem);
   }
 }
 
@@ -1332,8 +1353,8 @@ address {
 
 @media screen and (min-width: 48rem) {
   .project-cards__item {
-    -ms-flex-preferred-size: calc((100% - 4*1.5rem)/2);
-        flex-basis: calc((100% - 4*1.5rem)/2);
+    -ms-flex-preferred-size: calc((100% - 4 * 1.5rem) / 2);
+        flex-basis: calc((100% - 4 * 1.5rem) / 2);
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
@@ -1346,8 +1367,8 @@ address {
 
 @media screen and (min-width: 75rem) {
   .project-cards__item {
-    -ms-flex-preferred-size: calc((100% - 6*1.5rem)/3);
-        flex-basis: calc((100% - 6*1.5rem)/3);
+    -ms-flex-preferred-size: calc((100% - 6 * 1.5rem) / 3);
+        flex-basis: calc((100% - 6 * 1.5rem) / 3);
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
@@ -1745,7 +1766,7 @@ address {
   .footer-block--mr70 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
     text-align: left;
   }
 }
@@ -1792,7 +1813,7 @@ address {
           justify-content: center;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 75rem) {
   .studio-socials {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
